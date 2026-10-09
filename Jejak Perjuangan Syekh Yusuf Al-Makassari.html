@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Perjuangan Syekh Yusuf Al-Makassari (Tuanta Salamaka)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            800: '#065F46',
+                            900: '#064E3B',
+                            950: '#022C22',
+                        },
+                        amber: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        },
+                        sand: '#FDFBF7',
+                        parchment: '#F4EFE6',
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #D97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pattern-bg {
+            background-color: #064E3B;
+            background-image: radial-gradient(#F59E0B 0.75px, transparent 0.75px), radial-gradient(#F59E0B 0.75px, #064E3B 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+            background-opacity: 0.1;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #F4EFE6;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #D97706;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-sand text-gray-800 font-sans antialiased custom-scrollbar">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-emerald-950/90 backdrop-blur-md border-b border-amber-500/30 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-emerald-950 transition-all duration-300">
+                    <i class="fa-solid me-0.5 fa-star-and-crescent text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-cinzel text-lg font-bold tracking-wider gold-gradient-text block">SYEKH YUSUF</span>
+                    <span class="text-xs text-amber-200/80 tracking-widest uppercase block -mt-1">Tuanta Salamaka</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#biografi" class="text-amber-100 hover:text-amber-400 transition-colors">Biografi</a>
+                <a href="#perjalanan" class="text-amber-100 hover:text-amber-400 transition-colors">Rute Perjuangan</a>
+                <a href="#ajaran" class="text-amber-100 hover:text-amber-400 transition-colors">Warisan & Ajaran</a>
+                <a href="#galeri" class="text-amber-100 hover:text-amber-400 transition-colors">Situs Bersejarah</a>
+                <a href="#kuis" class="px-4 py-2 bg-amber-500/20 text-amber-300 border border-amber-400/50 rounded-full hover:bg-amber-500 hover:text-emerald-950 transition-all font-semibold">Uji Pemahaman</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-amber-400 text-2xl focus:outline-none" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-900 border-b border-amber-500/30 px-6 py-4 space-y-4">
+            <a href="#biografi" class="block text-amber-100 hover:text-amber-400 py-1">Biografi</a>
+            <a href="#perjalanan" class="block text-amber-100 hover:text-amber-400 py-1">Rute Perjuangan</a>
+            <a href="#ajaran" class="block text-amber-100 hover:text-amber-400 py-1">Warisan & Ajaran</a>
+            <a href="#galeri" class="block text-amber-100 hover:text-amber-400 py-1">Situs Bersejarah</a>
+            <a href="#kuis" class="block text-amber-300 font-semibold py-1">Uji Pemahaman</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] bg-emerald-950 flex items-center justify-center overflow-hidden py-20 px-4">
+        <!-- Background Decorative Patterns -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-600/30 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-5xl mx-auto text-center z-10 space-y-8">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-emerald-900/80 border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-medium tracking-wide">
+                <i class="fa-solid fa-crown text-amber-400"></i>
+                <span>Pahlawan Nasional Indonesia & Afrika Selatan</span>
+            </div>
+
+            <h1 class="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight">
+                Jejak Perjuangan <br/>
+                <span class="gold-gradient-text">Syekh Yusuf Al-Makassari</span>
+            </h1>
+
+            <p class="font-arabic text-2xl sm:text-3xl text-amber-200/90 dir-rtl my-4">
+                tajul khalwati al-maqassari (1626 – 1699 M)
+            </p>
+
+            <p class="max-w-2xl mx-auto text-amber-100/80 text-base sm:text-lg font-light leading-relaxed">
+                "Ulama sufi penyebar Islam, pejuang lintas samudera Melawan Kolonialisme dari Gowa, Banten, Ceylon, hingga Tanjung Harapan Afrika Selatan."
+            </p>
+
+            <!-- Wisdom Callout -->
+            <div class="max-w-xl mx-auto p-4 sm:p-6 rounded-2xl bg-emerald-900/50 border border-amber-500/30 backdrop-blur-sm shadow-xl">
+                <p class="text-amber-200 italic font-serif text-sm sm:text-base">
+                    "Siapa yang mengenal dirinya, niscaya ia mengenal Tuhannya. Keteguhan iman tak akan pernah bertekuk lutut di hadapan penindasan."
+                </p>
+                <span class="block mt-2 text-xs text-amber-400 font-semibold tracking-wider uppercase">— Tuanta Salamaka</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#perjalanan" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-emerald-950 font-bold rounded-xl shadow-lg hover:shadow-amber-500/25 hover:scale-105 transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Jelajahi Rute Perjuangan</span>
+                </a>
+                <a href="#biografi" class="w-full sm:w-auto px-8 py-4 bg-emerald-900/80 border border-amber-500/40 text-amber-200 font-semibold rounded-xl hover:bg-emerald-800 transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Baca Biografi Lengkap</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Search Section -->
+    <section class="py-6 bg-emerald-900 border-y border-amber-500/30 sticky top-20 z-40 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="relative w-full md:w-2/3">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-amber-500"></i>
+                    <input type="text" id="global-search" placeholder="Cari sejarah, ajaran, lokasi, atau karya (contoh: Banten, Siri' na Pacce, Ceylon)..." 
+                           class="w-full pl-12 pr-4 py-3 bg-emerald-950 border border-amber-500/40 rounded-xl text-white placeholder-amber-200/50 focus:outline-none focus:border-amber-400 transition-all text-sm">
+                </div>
+                <div class="flex items-center space-x-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
+                    <span class="text-xs text-amber-200 font-medium whitespace-nowrap"><i class="fa-solid fa-filter mr-1"></i> Filter:</span>
+                    <button class="filter-btn active px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-500 text-emerald-950 whitespace-nowrap transition-all" data-filter="all">Semua</button>
+                    <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-950 text-amber-200 border border-amber-500/30 whitespace-nowrap hover:bg-emerald-800 transition-all" data-filter="sejarah">Sejarah</button>
+                    <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-950 text-amber-200 border border-amber-500/30 whitespace-nowrap hover:bg-emerald-800 transition-all" data-filter="ajaran">Ajaran</button>
+                    <button class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-950 text-amber-200 border border-amber-500/30 whitespace-nowrap hover:bg-emerald-800 transition-all" data-filter="lokasi">Situs/Lokasi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section id="biografi" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto searchable-item" data-category="sejarah">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-amber-600 font-bold tracking-widest text-xs uppercase block mb-2">Profil & asal-usul</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-emerald-950">Mengenal Sosok Tuanta Salamaka</h2>
+            <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Info Box -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="bg-parchment p-8 rounded-3xl border border-amber-900/10 shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-bl-full"></div>
+                    
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-900 text-amber-400 flex items-center justify-center text-2xl font-bold font-cinzel">
+                            SY
+                        </div>
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-emerald-950">Muhammad Yusuf</h3>
+                            <p class="text-amber-700 text-sm font-semibold">Gelar: Tuanta Salamaka ri Gowa</p>
+                            <p class="text-gray-500 text-xs">("Guru kami yang diberkahi/penyelamat")</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-sm divide-y divide-amber-900/10">
+                        <div class="pt-2 flex justify-between">
+                            <span class="text-gray-500 font-medium">Lahir</span>
+                            <span class="text-emerald-900 font-semibold">3 Juli 1626 (Gowa, SULSEL)</span>
+                        </div>
+                        <div class="pt-2 flex justify-between">
+                            <span class="text-gray-500 font-medium">Wafat</span>
+                            <span class="text-emerald-900 font-semibold">23 Mei 1699 (Cape Town, Afsel)</span>
+                        </div>
+                        <div class="pt-2 flex justify-between">
+                            <span class="text-gray-500 font-medium">Orang Tua</span>
+                            <span class="text-emerald-900 font-semibold text-right">Abdullah & Sitti Aminah</span>
+                        </div>
+                        <div class="pt-2 flex justify-between">
+                            <span class="text-gray-500 font-medium">Raja Pelindung</span>
+                            <span class="text-emerald-900 font-semibold text-right">Sultan Alauddin (Raja Gowa XIV)</span>
+                        </div>
+                        <div class="pt-2 flex justify-between">
+                            <span class="text-gray-500 font-medium">Gelar Sufi</span>
+                            <span class="text-emerald-900 font-semibold text-right">Tajul Khalwati Al-Maqassari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Narrative -->
+            <div class="lg:col-span-7 space-y-6 text-gray-700 leading-relaxed">
+                <h3 class="text-2xl font-bold text-emerald-900 font-cinzel">Kelahiran, Pendidikan, & Gelar Kehormatan</h3>
+                <p>
+                    Syekh Yusuf lahir di Kerajaan Gowa, Sulawesi Selatan pada masa keemasan Islam di Nusantara. Sejak kecil, ia telah memperlihatkan kecerdasan spiritual yang luar biasa. Ia berguru pada para ulama besar di tanah Luwu dan Cikoang sebelum akhirnya melalang buana menuntut ilmu agama hingga ke Yaman, Makkah, Madinah, dan Damaskus.
+                </p>
+                <p>
+                    Kembali dari Timur Tengah, Syekh Yusuf menetap di Kesultanan Banten dan menjadi sahabat sekaligus penasihat spiritual Sultan Ageng Tirtayasa. Di Banten, ia memimpin pasukan gerilya melawan kompeni Belanda (VOC) setelah konflik perebutan kekuasaan yang dipicu VOC.
+                </p>
+                <div class="p-4 bg-emerald-50 border-l-4 border-emerald-800 rounded-r-xl">
+                    <h4 class="font-bold text-emerald-900 text-sm uppercase mb-1"><i class="fa-solid fa-certificate mr-1 text-amber-600"></i> Penghormatan Luas</h4>
+                    <p class="text-xs text-emerald-900">
+                        Di Indonesia, beliau diangkat sebagai <strong>Pahlawan Nasional</strong> pada tahun 1995. Di Afrika Selatan, Presiden Nelson Mandela menyebutnya sebagai <em>"Salah Satu Putra Terbaik Afrika"</em> dan menganugerahkan penghargaan tertinggi 'Oliver Tambo' atas jasa memicu resistensi anti-kolonialisme & rasisme.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Route / Timeline Section -->
+    <section id="perjalanan" class="py-20 bg-emerald-950 text-white relative pattern-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-400 font-bold tracking-widest text-xs uppercase block mb-2">Penjelajahan & Pengasingan</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Rute Perjuangan Lintas Samudera</h2>
+                <p class="text-amber-200/80 text-sm mt-2">Klik tiap titik untuk mempelajari jejak perjuangan beliau di lokasi tersebut.</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Interactive Map Timeline Component -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Steps Navigation / Buttons -->
+                <div class="lg:col-span-5 space-y-4">
+                    <!-- Step 1 -->
+                    <button onclick="showRouteStep(1)" id="btn-step-1" class="route-step-btn w-full text-left p-5 rounded-2xl bg-amber-500 text-emerald-950 font-semibold shadow-lg border border-amber-400 transition-all flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <span class="w-10 h-10 rounded-full bg-emerald-950 text-amber-400 flex items-center justify-center font-bold text-base">1</span>
+                            <div>
+                                <h4 class="font-bold text-lg">Makassar & Menuntut Ilmu</h4>
+                                <p class="text-xs opacity-80">1626 – 1644 M</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+
+                    <!-- Step 2 -->
+                    <button onclick="showRouteStep(2)" id="btn-step-2" class="route-step-btn w-full text-left p-5 rounded-2xl bg-emerald-900/60 text-amber-100 hover:bg-emerald-900 border border-amber-500/20 transition-all flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <span class="w-10 h-10 rounded-full bg-emerald-950 text-amber-400 flex items-center justify-center font-bold text-base">2</span>
+                            <div>
+                                <h4 class="font-bold text-lg">Banten & Perlawanan VOC</h4>
+                                <p class="text-xs text-amber-300/70">1664 – 1684 M</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+
+                    <!-- Step 3 -->
+                    <button onclick="showRouteStep(3)" id="btn-step-3" class="route-step-btn w-full text-left p-5 rounded-2xl bg-emerald-900/60 text-amber-100 hover:bg-emerald-900 border border-amber-500/20 transition-all flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <span class="w-10 h-10 rounded-full bg-emerald-950 text-amber-400 flex items-center justify-center font-bold text-base">3</span>
+                            <div>
+                                <h4 class="font-bold text-lg">Pengasingan di Ceylon (Sri Lanka)</h4>
+                                <p class="text-xs text-amber-300/70">1684 – 1693 M</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+
+                    <!-- Step 4 -->
+                    <button onclick="showRouteStep(4)" id="btn-step-4" class="route-step-btn w-full text-left p-5 rounded-2xl bg-emerald-900/60 text-amber-100 hover:bg-emerald-900 border border-amber-500/20 transition-all flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <span class="w-10 h-10 rounded-full bg-emerald-950 text-amber-400 flex items-center justify-center font-bold text-base">4</span>
+                            <div>
+                                <h4 class="font-bold text-lg">Cape Town, Afrika Selatan</h4>
+                                <p class="text-xs text-amber-300/70">1693 – 1699 M</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+                </div>
+
+                <!-- Display Details Card -->
+                <div class="lg:col-span-7 bg-emerald-900/80 border border-amber-500/30 p-8 rounded-3xl backdrop-blur-md relative overflow-hidden min-h-[380px]" id="route-display">
+                    <!-- Content will be injected dynamically via JS -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sufi Teachings & Legacy -->
+    <section id="ajaran" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto searchable-item" data-category="ajaran">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-amber-600 font-bold tracking-widest text-xs uppercase block mb-2">Nilai Spiritual & Filosofi</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-emerald-950">Warisan & Ajaran Tasawuf</h2>
+            <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1: Tarekat -->
+            <div class="bg-parchment p-8 rounded-3xl border border-amber-900/10 shadow-md hover:shadow-xl transition-all group">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-900 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-emerald-950 transition-all">
+                    <i class="fa-solid fa-mosque"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-emerald-950 mb-3">Tarekat Khalwatiyah</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Mengembangkan aliran Tarekat Khalwatiyah Nurul Anwar. Mengajarkan pembersihan jiwa (Tazkiyatun Nufs) melalui zikir berkesinambungan, keseimbangan spiritual, dan keterlibatan aktif membela keadilan masyarakat.
+                </p>
+            </div>
+
+            <!-- Card 2: Siri' na Pacce -->
+            <div class="bg-parchment p-8 rounded-3xl border border-amber-900/10 shadow-md hover:shadow-xl transition-all group">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-900 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-emerald-950 transition-all">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-emerald-950 mb-3">Prinsip Siri' na Pacce</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Memadukan nilai tauhid Islami dengan kebudayaan Bugis-Makassar: <strong>Siri'</strong> (harkat, martabat, dan harga diri) serta <strong>Pacce</strong> (rasa empati mendalam dan solidaritas sesama manusia).
+                </p>
+            </div>
+
+            <!-- Card 3: Karya Tulis -->
+            <div class="bg-parchment p-8 rounded-3xl border border-amber-900/10 shadow-md hover:shadow-xl transition-all group">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-900 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-emerald-950 transition-all">
+                    <i class="fa-solid fa-scroll"></i>
+                </div>
+                <h3 class="font-cinzel text-xl font-bold text-emerald-950 mb-3">Kitab & Karya Ilmiah</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Menulis puluhan risalah berbahasa Arab dan Melayu. Karya monumental antara lain <em>An-Nafhatul Asrariyyah</em>, <em>Zubdatul Asrar</em>, dan <em>Sirrul Asrar</em> yang menjadi rujukan tasawuf dunia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Sites Gallery -->
+    <section id="galeri" class="py-20 bg-emerald-900/10 border-y border-amber-500/20 searchable-item" data-category="lokasi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-bold tracking-widest text-xs uppercase block mb-2">Monumen & Jejak Fisik</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-emerald-950">Situs Bersejarah & Ziarah</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Site 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-amber-500/20 hover:scale-[1.02] transition-all">
+                    <div class="h-48 bg-emerald-950 relative flex items-center justify-center p-6 text-center text-amber-300">
+                        <i class="fa-solid fa-place-of-worship text-6xl opacity-30 absolute"></i>
+                        <span class="relative font-cinzel text-xl font-bold">Makam Lakiung, Gowa</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-1 rounded-full uppercase">Indonesia</span>
+                        <h4 class="font-bold text-emerald-950 text-lg mt-3 mb-2">Makam Syekh Yusuf di Gowa</h4>
+                        <p class="text-gray-600 text-xs leading-relaxed">
+                            Atas permintaan Sultan Abdul Jalil, jenazah Syekh Yusuf dipindahkan dari Cape Town ke Lakiung, Gowa pada 1705 M. Menjadi pusat ziarah spiritual utama hingga kini.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Site 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-amber-500/20 hover:scale-[1.02] transition-all">
+                    <div class="h-48 bg-emerald-900 relative flex items-center justify-center p-6 text-center text-amber-300">
+                        <i class="fa-solid fa-monument text-6xl opacity-30 absolute"></i>
+                        <span class="relative font-cinzel text-xl font-bold">Kramat Zandvleit, Macassar</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-1 rounded-full uppercase">Afrika Selatan</span>
+                        <h4 class="font-bold text-emerald-950 text-lg mt-3 mb-2">Kramat Cape Town (Faure)</h4>
+                        <p class="text-gray-600 text-xs leading-relaxed">
+                            Situs tempat pemakaman pertama beliau di Zandvleit. Wilayah permukiman pengikutnya dinamai 'Macassar', yang menjadi cikal bakal komunitas Muslim pertama di Afrika Selatan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Site 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-amber-500/20 hover:scale-[1.02] transition-all">
+                    <div class="h-48 bg-emerald-800 relative flex items-center justify-center p-6 text-center text-amber-300">
+                        <i class="fa-solid fa-landmark text-6xl opacity-30 absolute"></i>
+                        <span class="relative font-cinzel text-xl font-bold">Situs Banten Lama</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-1 rounded-full uppercase">Banten</span>
+                        <h4 class="font-bold text-emerald-950 text-lg mt-3 mb-2">Benteng & Medan Perjuangan</h4>
+                        <p class="text-gray-600 text-xs leading-relaxed">
+                            Lokasi pusat perlawanan gerilya Syekh Yusuf bersama 5.000 prajurit gabungan Banten dan Makassar melawan hegemoni persenjataan tentara VOC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wisdom & Moral Quotes Section -->
+    <section class="py-20 bg-emerald-950 text-white relative">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <i class="fa-solid fa-quote-left text-4xl text-amber-500 mb-6"></i>
+            <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-amber-100 mb-6 leading-snug">
+                "Peliharalah niat yang suci, karena kebaikan yang dilakukan dengan keikhlasan tidak akan pernah sirnah meski dipisahkan oleh bukit dan lautan."
+            </h2>
+            <div class="text-amber-400 font-bold tracking-widest text-sm uppercase">— Tuanta Salamaka ri Gowa</div>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section id="kuis" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="bg-parchment border-2 border-amber-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
+            <div class="text-center mb-8">
+                <span class="text-amber-600 font-bold tracking-widest text-xs uppercase block mb-1">Evaluasi Pemahaman</span>
+                <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-emerald-950">Kuis Sejarah Syekh Yusuf</h2>
+                <p class="text-xs text-gray-500 mt-1">Uji pengetahuan Anda mengenai perjalanan hidup Tuanta Salamaka.</p>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quiz-box">
+                <div id="quiz-question-container" class="space-y-6">
+                    <div class="flex justify-between items-center text-xs font-semibold text-amber-800">
+                        <span id="quiz-progress">Pertanyaan 1 dari 4</span>
+                        <span id="quiz-score-badge" class="bg-amber-200 px-3 py-1 rounded-full">Skor: 0</span>
+                    </div>
+
+                    <h3 id="quiz-question" class="text-lg font-bold text-emerald-950">
+                        <!-- Dynamic Question -->
+                    </h3>
+
+                    <div id="quiz-options" class="grid grid-cols-1 gap-3">
+                        <!-- Dynamic Options -->
+                    </div>
+                </div>
+
+                <!-- Quiz Completion Screen -->
+                <div id="quiz-result" class="hidden text-center py-8 space-y-6">
+                    <div class="w-20 h-20 bg-amber-500 text-emerald-950 rounded-full flex items-center justify-center text-4xl mx-auto font-bold">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="font-cinzel text-2xl font-bold text-emerald-950">Kuis Selesai!</h3>
+                    <p id="quiz-final-text" class="text-gray-700 text-sm"></p>
+                    <button onclick="resetQuiz()" class="px-6 py-3 bg-emerald-900 text-amber-300 font-bold rounded-xl hover:bg-emerald-800 transition-all">
+                        <i class="fa-solid fa-rotate-right mr-2"></i>Coba Lagi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-amber-100/70 py-12 border-t border-amber-500/20 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="flex justify-center items-center space-x-2">
+                <i class="fa-solid fa-star-and-crescent text-amber-400 text-lg"></i>
+                <span class="font-cinzel text-sm font-bold text-amber-400 tracking-wider">SYEKH YUSUF AL-MAKASSARI</span>
+            </div>
+            <p class="max-w-md mx-auto text-amber-200/60">
+                Website edukasi interaktif memperingati rekam jejak perjuangan, spiritualitas, dan nilai kemanusiaan Tuanta Salamaka ri Gowa.
+            </p>
+            <div class="pt-4 border-t border-emerald-900 text-amber-300/40">
+                &copy; 2026 Warisan Budaya & Sejarah Nusantara. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        // --- Route / Travel Data ---
+        const routeData = {
+            1: {
+                title: "Makassar & Masa Menuntut Ilmu",
+                period: "1626 – 1644 M",
+                location: "Gowa, Sulawesi Selatan",
+                desc: "Lahir di Kerajaan Gowa dari pasangan Abdullah dan Sitti Aminah. Sejak muda memelajari ilmu agama, fiqih, dan bahasa Arab dari ulama setempat. Pada usia 18 tahun, beliau memulai rihlah ilmiah ke pusat-pusat peradaban Islam di Yaman, Makkah, Madinah, hingga Damaskus untuk mendalami tasawuf.",
+                highlights: ["Gelar Tuanta Salamaka", "Rihlah Ilmiah ke Timur Tengah", "Penguasaan 5 Tarekat Besar"]
+            },
+            2: {
+                title: "Banten & Perlawanan Perang Gerilya",
+                period: "1664 – 1684 M",
+                location: "Kesultanan Banten",
+                desc: "Sekembalinya dari Timur Tengah, beliau menetap di Banten dan diangkat menjadi penasihat Sultan Ageng Tirtayasa. Saat VOC menyerang Banten, Syekh Yusuf memimpin pasukan gerilya bergerilya di hutan Jawa Barat membela kedaulatan Banten sebelum akhirnya ditangkap secara licik oleh VOC.",
+                highlights: ["Penasihat Agung Banten", "Panglima Gerilya Anti-VOC", "Pengaruh Luas di Pulau Jawa"]
+            },
+            3: {
+                title: "Pengasingan Pertama: Ceylon (Sri Lanka)",
+                period: "1684 – 1693 M",
+                location: "Colombo, Ceylon",
+                desc: "Khawatir akan pengaruh perlawanannya, VOC mengasingkan Syekh Yusuf ke Sri Lanka. Di Ceylon, beliau tetap aktif mengajar dan menulis kitab. Bahkan raja-raja Melayu dan jamaah haji Nusantara kerap singgah untuk berguru padanya, membuat VOC semakin cemas.",
+                highlights: ["Pusat Studi Islam Ceylon", "Surat Rahasia Kemerdekaan", "Menulis Kitab Zubdatul Asrar"]
+            },
+            4: {
+                title: "Pengasingan Akhir: Cape Town, Afrika Selatan",
+                period: "1693 – 1699 M",
+                location: "Zandvleit / Macassar, Cape Town",
+                desc: "VOC memindahkan Syekh Yusuf ke tempat terpencil di Cape Town. Di sana beliau membangun komunitas Muslim pertama di Afrika Selatan, memberikan perlindungan bagi para budak, dan menanamkan benih kesetaraan manusia yang menginspirasi gerakan Anti-Apartheid di kemudian hari.",
+                highlights: ["Bapak Komunitas Muslim Afsel", "Perintis Gerakan Anti-Rasisme", "Pahlawan Nasional Afsel"]
+            }
+        };
+
+        function showRouteStep(step) {
+            // Update active state of buttons
+            document.querySelectorAll('.route-step-btn').forEach((btn, idx) => {
+                if (idx + 1 === step) {
+                    btn.classList.remove('bg-emerald-900/60', 'text-amber-100');
+                    btn.classList.add('bg-amber-500', 'text-emerald-950');
+                } else {
+                    btn.classList.remove('bg-amber-500', 'text-emerald-950');
+                    btn.classList.add('bg-emerald-900/60', 'text-amber-100');
+                }
+            });
+
+            // Update content display
+            const data = routeData[step];
+            const display = document.getElementById('route-display');
+            display.innerHTML = `
+                <div class="space-y-4 animate-fade-in">
+                    <div class="flex items-center justify-between border-b border-amber-500/20 pb-3">
+                        <span class="text-xs bg-amber-500/20 text-amber-300 border border-amber-400/30 px-3 py-1 rounded-full font-semibold">${data.period}</span>
+                        <span class="text-xs text-amber-200/70"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>${data.location}</span>
+                    </div>
+                    <h3 class="font-cinzel text-2xl font-bold text-amber-300">${data.title}</h3>
+                    <p class="text-amber-100/80 text-sm leading-relaxed">${data.desc}</p>
+                    <div class="pt-4">
+                        <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Pencapaian Utama:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${data.highlights.map(h => `<span class="text-xs bg-emerald-950/80 border border-amber-500/30 text-amber-200 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>${h}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize Route Display on Load
+        showRouteStep(1);
+
+        // --- Quiz Data & Logic ---
+        const quizQuestions = [
+            {
+                q: "Di manakah Syekh Yusuf Al-Makassari dilahirkan?",
+                options: ["Kesultanan Banten", "Kerajaan Gowa (Sulawesi Selatan)", "Colombo, Sri Lanka", "Cape Town, Afrika Selatan"],
+                answer: 1
+            },
+            {
+                q: "Gelar apakah yang diberikan oleh masyarakat Bugis-Makassar kepada Syekh Yusuf yang berarti 'Guru penyelamat kami'?",
+                options: ["Sultan Ageng", "Tuanta Salamaka", "Karaeng Galesong", "Dato Ri Bandang"],
+                answer: 1
+            },
+            {
+                q: "Apakah nama Tarekat utama yang dikembangkan dan diajarkan oleh Syekh Yusuf?",
+                options: ["Tarekat Naqsyabandiyah", "Tarekat Qadiriyah", "Tarekat Khalwatiyah Nurul Anwar", "Tarekat Tijaniyah"],
+                answer: 2
+            },
+            {
+                q: "Tokoh besar dunia yang menyebut Syekh Yusuf sebagai 'Salah Satu Putra Terbaik Afrika' adalah...",
+                options: ["Mahatma Gandhi", "Nelson Mandela", "Sukarno", "Kofi Annan"],
+                answer: 1
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const qData = quizQuestions[currentQuestion];
+            document.getElementById("quiz-progress").innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizQuestions.length}`;
+            document.getElementById("quiz-score-badge").innerText = `Skor: ${score}`;
+            document.getElementById("quiz-question").innerText = qData.q;
+
+            const optionsContainer = document.getElementById("quiz-options");
+            optionsContainer.innerHTML = "";
+
+            qData.options.forEach((opt, idx) => {
+                const btn = document.createElement("button");
+                btn.className = "w-full text-left p-4 rounded-xl border border-amber-900/10 bg-white hover:bg-amber-100/50 transition-all font-medium text-emerald-950 text-sm flex items-center justify-between";
+                btn.innerHTML = `<span>${opt}</span> <i class="fa-regular fa-circle text-amber-600"></i>`;
+                btn.onclick = () => checkAnswer(idx);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIdx) {
+            if (selectedIdx === quizQuestions[currentQuestion].answer) {
+                score += 25;
+            }
+
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById("quiz-question-container").classList.add("hidden");
+            document.getElementById("quiz-result").classList.remove("hidden");
+            
+            let message = "";
+            if(score === 100) {
+                message = "Sempurna! Anda memiliki pemahaman yang luar biasa tentang sejarah Syekh Yusuf Al-Makassari.";
+            } else if(score >= 50) {
+                message = `Bagus! Skor Anda adalah ${score}/100. Anda sudah memahami garis besar perjuangan Tuanta Salamaka.`;
+            } else {
+                message = `Skor Anda ${score}/100. Silakan pelajari kembali materi pada website untuk mengenal beliau lebih dalam.`;
+            }
+            
+            document.getElementById("quiz-final-text").innerText = message;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById("quiz-question-container").classList.remove("hidden");
+            document.getElementById("quiz-result").classList.add("hidden");
+            loadQuestion();
+        }
+
+        // Initialize Quiz
+        loadQuestion();
+
+        // --- Global Search & Filter Functionality ---
+        const searchInput = document.getElementById("global-search");
+        const filterBtns = document.querySelectorAll(".filter-btn");
+
+        searchInput.addEventListener("input", function(e) {
+            const query = e.target.value.toLowerCase();
+            const items = document.querySelectorAll(".searchable-item");
+
+            items.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove("bg-amber-500", "text-emerald-950");
+                    b.classList.add("bg-emerald-950", "text-amber-200");
+                });
+
+                btn.classList.remove("bg-emerald-950", "text-amber-200");
+                btn.classList.add("bg-amber-500", "text-emerald-950");
+
+                const filter = btn.getAttribute("data-filter");
+                const items = document.querySelectorAll(".searchable-item");
+
+                items.forEach(item => {
+                    if (filter === "all" || item.getAttribute("data-category") === filter) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
